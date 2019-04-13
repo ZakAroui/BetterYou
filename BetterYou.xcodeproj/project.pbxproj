@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */; };
 		3DE6C49458410387EC577DA3 /* Pods_BetterYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F879696026DE40F81B07CE94 /* Pods_BetterYou.framework */; };
 		837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BE0962261C96600EB8EBB /* NutritionData.swift */; };
 		83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F4982261AE5900572A1B /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
 		62D0477DB3E4095441C5909B /* Pods-BetterYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.debug.xcconfig"; sourceTree = "<group>"; };
 		67C921C657267CFA36DE10DA /* Pods-BetterYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.release.xcconfig"; sourceTree = "<group>"; };
 		837BE0962261C96600EB8EBB /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		83A2F4AD2261AE7D00572A1B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */,
 				83A2F49C2261AE5900572A1B /* ViewController.swift */,
 			);
 			path = Controller;
@@ -225,10 +228,11 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BetterYou/Pods-BetterYou-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV1/Assistant.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV2/Assistant.framework",
+				"${BUILT_PRODUCTS_DIR}/IBMWatsonCompareComplyV1/CompareComply.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonDiscoveryV1/Discovery.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonLanguageTranslatorV3/LanguageTranslator.framework",
 				"${BUILT_PRODUCTS_DIR}/IBMWatsonNaturalLanguageClassifierV1/NaturalLanguageClassifier.framework",
@@ -247,6 +251,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Assistant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CompareComply.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Discovery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LanguageTranslator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaturalLanguageClassifier.framework",
@@ -261,7 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BetterYou/Pods-BetterYou-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A2F49D2261AE5900572A1B /* ViewController.swift in Sources */,
+				0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */,
 				83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */,
 				837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */,
 			);
