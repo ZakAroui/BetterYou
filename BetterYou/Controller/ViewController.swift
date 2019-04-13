@@ -98,7 +98,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         textNode.scale = SCNVector3(nodeWidth, nodeHeight, nodeDepth)
          */
-        var textNode     = self.calorieScene.rootNode.childNode(withName: "Calories", recursively: true )!
+        var textNode = self.calorieScene.rootNode.childNode(withName: "Calories", recursively: true )!
         
         return textNode
     }

@@ -68,13 +68,6 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
-		837BE0982261CC0B00EB8EBB /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
 		83A2F48C2261AE5800572A1B = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +89,6 @@
 		83A2F4972261AE5800572A1B /* BetterYou */ = {
 			isa = PBXGroup;
 			children = (
-				837BE0982261CC0B00EB8EBB /* Scenes */,
 				837BE0952261C91600EB8EBB /* Web */,
 				837BE0942261C8AC00EB8EBB /* Model */,
 				83A2F4982261AE5900572A1B /* AppDelegate.swift */,
