@@ -11,14 +11,19 @@ import CoreML
 import Vision
 import ImageIO
 import VisualRecognition
+import TextToSpeech
+import AVKit
 
 class ImageClassificationVC: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var classificationLabel: UILabel!
-    
+    var audioPlayer: AVAudioPlayer!
     var visualRecognition: VisualRecognition!
+    let textToSpeech = TextToSpeech(apiKey: "saoXu9eZr6zGva_DyV4umFLOfMS441_aPVwnoRK8NNiX")
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +33,6 @@ class ImageClassificationVC: UIViewController {
     }
     
     func classifyImg(image: UIImage){
-        
         self.classificationLabel.text = "Classifying..."
         
         visualRecognition.classify(image: image, threshold: 0.6, classifierIDs: ["food"]) {
@@ -40,6 +44,10 @@ class ImageClassificationVC: UIViewController {
             }
             
             let classes = result.images[0].classifiers[0].classes
+            
+            if !classes.isEmpty {
+                self.tts(text: classes[0].className, textToSpeech: self.textToSpeech)
+            }
             
             var clsses = ""
             for classRslt in classes {
@@ -83,6 +91,7 @@ class ImageClassificationVC: UIViewController {
     
     func updateClassifications(for image: UIImage) {
         classificationLabel.text = "Classifying..."
+        tts(text: classificationLabel.text! , textToSpeech: textToSpeech)
         
         let orientation = CGImagePropertyOrientation(image.imageOrientation)
         guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) from \(image).") }
@@ -102,21 +111,46 @@ class ImageClassificationVC: UIViewController {
         }
     }
     
+    func tts(text: String, textToSpeech: TextToSpeech){
+        textToSpeech.synthesize(text: text, accept: "audio/wav", completionHandler: { response,error  in
+            
+            if let error = error {
+                print(error)
+            }
+            
+            guard let data = response?.result else {
+                print("Failed to synthesize text")
+                return
+            }
+            
+            do {
+                self.audioPlayer = try AVAudioPlayer(data: data)
+                self.audioPlayer!.play()
+            } catch {
+                print("Failed to create audio player.")
+            }
+            
+        })
+    }
+    
     /// Updates the UI with the results of the classification.
     func processClassifications(for request: VNRequest, error: Error?) {
         DispatchQueue.main.async {
             guard let results = request.results else {
                 self.classificationLabel.text = "Unable to classify image.\n\(error!.localizedDescription)"
+                self.tts(text: self.classificationLabel.text! , textToSpeech: self.textToSpeech)
                 return
             }
             // The `results` will always be `VNClassificationObservation`s, as specified by the Core ML model in this project.
             let classifications = results as! [VNClassificationObservation]
             
             if classifications.isEmpty {
-                self.classificationLabel.text = "Nothing recognized."
+                self.classificationLabel.text = "Sorry, but I could not recognize the image."
+                self.tts(text: self.classificationLabel.text! , textToSpeech: self.textToSpeech)
             } else {
                 // Display top classification ranked by confidence in the UI.
                 self.classificationLabel.text = "Classification: " + classifications[0].identifier
+                self.tts(text: self.classificationLabel.text! , textToSpeech: self.textToSpeech)
             }
         }
     }
@@ -163,14 +197,26 @@ extension ImageClassificationVC: UIImagePickerControllerDelegate, UINavigationCo
         picker.dismiss(animated: true)
         
         // We always expect `imagePickerController(:didFinishPickingMediaWithInfo:)` to supply the original image.
-        let image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
+        var image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         imageView.contentMode = UIView.ContentMode.scaleAspectFit
+        image = imageWithImage(image: image, scaledToSize: CGSize(width: 250, height: 250))
+        
         imageView.image = image
         
 //        updateClassifications(for: image)
         classifyImg(image: image)
     }
+    
+    func imageWithImage(image:UIImage, scaledToSize newSize:CGSize) -> UIImage{
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0);
+        image.draw(in: CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: newSize.width, height: newSize.height)))
+        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return newImage
+    }
 }
+
+
 
 // Helper function inserted by Swift 4.2 migrator.
 private func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {

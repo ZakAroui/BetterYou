@@ -19,6 +19,7 @@ class FoodDetailsVC: UIViewController {
     var isStreaming = false
     var accumulator = SpeechRecognitionResultsAccumulator()
     @IBOutlet weak var textLabel: UILabel!
+    let textToSpeech = TextToSpeech(apiKey: "saoXu9eZr6zGva_DyV4umFLOfMS441_aPVwnoRK8NNiX")
     
     @IBAction func Mic(_ sender: UIButton) {
         if !isStreaming {
@@ -59,7 +60,7 @@ class FoodDetailsVC: UIViewController {
             apiKey: "8-mX4iVPs26X_wAWz4Ab6hf6JvkfT_LXf1NxTq3wWzDH"
         )
         
-        let textToSpeech = TextToSpeech(apiKey: "saoXu9eZr6zGva_DyV4umFLOfMS441_aPVwnoRK8NNiX")
+        
         
         let text = "All the problems of the world could be settled easily if dogs were only willing to think."
         
