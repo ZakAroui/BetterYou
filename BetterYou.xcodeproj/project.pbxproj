@@ -22,8 +22,7 @@
 		8300A04F2263137000088A92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A04E2263137000088A92 /* LoginViewController.swift */; };
 		8300A0512263140700088A92 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0502263140700088A92 /* SignUpViewController.swift */; };
 		8300A0532263154C00088A92 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0522263154C00088A92 /* GoalsViewController.swift */; };
-		8300A0552263B48500088A92 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0542263B48500088A92 /* CustomTableViewCell.swift */; };
-		8300A0572263B6CB00088A92 /* FoodInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0562263B6CB00088A92 /* FoodInformationViewController.swift */; };
+		8300A0572263B6CB00088A92 /* FoodDetailsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0562263B6CB00088A92 /* FoodDetailsTableVC.swift */; };
 		837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BE0962261C96600EB8EBB /* NutritionData.swift */; };
 		83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F4982261AE5900572A1B /* AppDelegate.swift */; };
 		83A2F49B2261AE5900572A1B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A2F49A2261AE5900572A1B /* art.scnassets */; };
@@ -50,8 +49,7 @@
 		8300A04E2263137000088A92 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8300A0502263140700088A92 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8300A0522263154C00088A92 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
-		8300A0542263B48500088A92 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		8300A0562263B6CB00088A92 /* FoodInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInformationViewController.swift; sourceTree = "<group>"; };
+		8300A0562263B6CB00088A92 /* FoodDetailsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsTableVC.swift; sourceTree = "<group>"; };
 		837BE0962261C96600EB8EBB /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
 		83A2F4952261AE5800572A1B /* BetterYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A2F4982261AE5900572A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,8 +166,7 @@
 				8300A0502263140700088A92 /* SignUpViewController.swift */,
 				8300A0522263154C00088A92 /* GoalsViewController.swift */,
 				0DC1213822629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
-				8300A0542263B48500088A92 /* CustomTableViewCell.swift */,
-				8300A0562263B6CB00088A92 /* FoodInformationViewController.swift */,
+				8300A0562263B6CB00088A92 /* FoodDetailsTableVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,12 +332,11 @@
 				8300A0512263140700088A92 /* SignUpViewController.swift in Sources */,
 				0DC1213722629A2600592BD5 /* ImageClassificationVC.swift in Sources */,
 				0DC1214B2262C5AB00592BD5 /* UsdaSearchResponse.swift in Sources */,
-				8300A0572263B6CB00088A92 /* FoodInformationViewController.swift in Sources */,
+				8300A0572263B6CB00088A92 /* FoodDetailsTableVC.swift in Sources */,
 				83A2F49D2261AE5900572A1B /* ViewController.swift in Sources */,
 				0DC1214122629EFE00592BD5 /* watson_plants.mlmodel in Sources */,
 				0DC121472262C4A500592BD5 /* UsdaRestClient.swift in Sources */,
 				0DC1213C22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld in Sources */,
-				8300A0552263B48500088A92 /* CustomTableViewCell.swift in Sources */,
 				0DC1214D2262C65800592BD5 /* UsdaFoodDesc.swift in Sources */,
 				0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */,
 				83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */,

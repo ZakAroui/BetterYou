@@ -17,7 +17,7 @@ class UsdaRestClient {
     let usdaReport2: String = "&type=f&format=json&api_key=NLciqcwTewbTVBcQBN66fdk8a1gqiBukNBJ7CmlV"
     
     func getReport(foodName: String, completion: @escaping (UsdaFood?) -> Void){
-        let reportUrl = usdaReeport1 + "q=" + foodName + usdaReport2
+        let reportUrl = usdaReeport1 + "ndbno=" + foodName + usdaReport2
         Alamofire.request(reportUrl, method: .get)
             .responseJSON { response in
                 guard response.result.isSuccess else {
