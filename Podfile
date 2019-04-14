@@ -12,7 +12,7 @@ target 'BetterYou' do
 
     pod 'IBMWatsonAssistantV1', '~> 2.0.1'
     pod 'IBMWatsonAssistantV2', '~> 2.0.1'
-   pod 'IBMWatsonCompareComplyV1', '~> 2.0.1'
+    pod 'IBMWatsonCompareComplyV1', '~> 2.0.1'
     pod 'IBMWatsonDiscoveryV1', '~> 2.0.1'
     pod 'IBMWatsonLanguageTranslatorV3', '~> 2.0.1'
     pod 'IBMWatsonNaturalLanguageClassifierV1', '~> 2.0.1'

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */; };
+		0DC1213722629A2600592BD5 /* ImageClassificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1213622629A2600592BD5 /* ImageClassificationVC.swift */; };
+		0DC1213922629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1213822629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		0DC1213C22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1213A22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld */; };
+		0DC1214122629EFE00592BD5 /* watson_plants.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1214022629EFE00592BD5 /* watson_plants.mlmodel */; };
+		0DC1214322629F0E00592BD5 /* watson_tools.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1214222629F0E00592BD5 /* watson_tools.mlmodel */; };
 		3DE6C49458410387EC577DA3 /* Pods_BetterYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F879696026DE40F81B07CE94 /* Pods_BetterYou.framework */; };
 		837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BE0962261C96600EB8EBB /* NutritionData.swift */; };
 		83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F4982261AE5900572A1B /* AppDelegate.swift */; };
@@ -20,6 +25,11 @@
 
 /* Begin PBXFileReference section */
 		0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
+		0DC1213622629A2600592BD5 /* ImageClassificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationVC.swift; sourceTree = "<group>"; };
+		0DC1213822629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		0DC1213B22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Ml_Vision_Simple.xcdatamodel; sourceTree = "<group>"; };
+		0DC1214022629EFE00592BD5 /* watson_plants.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = watson_plants.mlmodel; sourceTree = "<group>"; };
+		0DC1214222629F0E00592BD5 /* watson_tools.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = watson_tools.mlmodel; sourceTree = "<group>"; };
 		62D0477DB3E4095441C5909B /* Pods-BetterYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.debug.xcconfig"; sourceTree = "<group>"; };
 		67C921C657267CFA36DE10DA /* Pods-BetterYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.release.xcconfig"; sourceTree = "<group>"; };
 		837BE0962261C96600EB8EBB /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
@@ -80,6 +90,8 @@
 		83A2F48C2261AE5800572A1B = {
 			isa = PBXGroup;
 			children = (
+				0DC1214022629EFE00592BD5 /* watson_plants.mlmodel */,
+				0DC1214222629F0E00592BD5 /* watson_tools.mlmodel */,
 				83A2F4972261AE5800572A1B /* BetterYou */,
 				83A2F4962261AE5800572A1B /* Products */,
 				3D5B0A67E3339AEEBE25E36C /* Pods */,
@@ -107,6 +119,7 @@
 				83A2F4AC2261AE6C00572A1B /* View */,
 				83A2F4A12261AE5B00572A1B /* Assets.xcassets */,
 				83A2F4A32261AE5B00572A1B /* LaunchScreen.storyboard */,
+				0DC1213A22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld */,
 				83A2F4A62261AE5B00572A1B /* Info.plist */,
 			);
 			path = BetterYou;
@@ -124,7 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */,
+				0DC1213622629A2600592BD5 /* ImageClassificationVC.swift */,
 				83A2F49C2261AE5900572A1B /* ViewController.swift */,
+				0DC1213822629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC1213722629A2600592BD5 /* ImageClassificationVC.swift in Sources */,
 				83A2F49D2261AE5900572A1B /* ViewController.swift in Sources */,
+				0DC1214122629EFE00592BD5 /* watson_plants.mlmodel in Sources */,
+				0DC1213C22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld in Sources */,
 				0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */,
 				83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */,
+				0DC1214322629F0E00592BD5 /* watson_tools.mlmodel in Sources */,
+				0DC1213922629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +509,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0DC1213A22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0DC1213B22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodel */,
+			);
+			currentVersion = 0DC1213B22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodel */;
+			path = Core_Ml_Vision_Simple.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83A2F48D2261AE5800572A1B /* Project object */;
 }
