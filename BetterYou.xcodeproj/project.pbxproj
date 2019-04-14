@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */; };
 		3DE6C49458410387EC577DA3 /* Pods_BetterYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F879696026DE40F81B07CE94 /* Pods_BetterYou.framework */; };
+		8300A04F2263137000088A92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A04E2263137000088A92 /* LoginViewController.swift */; };
+		8300A0512263140700088A92 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0502263140700088A92 /* SignUpViewController.swift */; };
+		8300A0532263154C00088A92 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8300A0522263154C00088A92 /* GoalsViewController.swift */; };
 		837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BE0962261C96600EB8EBB /* NutritionData.swift */; };
 		83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F4982261AE5900572A1B /* AppDelegate.swift */; };
 		83A2F49B2261AE5900572A1B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A2F49A2261AE5900572A1B /* art.scnassets */; };
@@ -22,6 +25,9 @@
 		0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
 		62D0477DB3E4095441C5909B /* Pods-BetterYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.debug.xcconfig"; sourceTree = "<group>"; };
 		67C921C657267CFA36DE10DA /* Pods-BetterYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.release.xcconfig"; sourceTree = "<group>"; };
+		8300A04E2263137000088A92 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8300A0502263140700088A92 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8300A0522263154C00088A92 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		837BE0962261C96600EB8EBB /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
 		83A2F4952261AE5800572A1B /* BetterYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A2F4982261AE5900572A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 			children = (
 				0D51C6E922625F020051EB08 /* FoodDetailsVC.swift */,
 				83A2F49C2261AE5900572A1B /* ViewController.swift */,
+				8300A04E2263137000088A92 /* LoginViewController.swift */,
+				8300A0502263140700088A92 /* SignUpViewController.swift */,
+				8300A0522263154C00088A92 /* GoalsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8300A0532263154C00088A92 /* GoalsViewController.swift in Sources */,
+				8300A0512263140700088A92 /* SignUpViewController.swift in Sources */,
 				83A2F49D2261AE5900572A1B /* ViewController.swift in Sources */,
 				0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */,
 				83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */,
+				8300A04F2263137000088A92 /* LoginViewController.swift in Sources */,
 				837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

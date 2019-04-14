@@ -19,15 +19,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Create a new scene
+        //let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/Scenes/NutritionFactsScene.scn")!
+        
         // Set the view's delegate
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
         displayDebugInfo()
-        
-        // Create a new scene
-        //let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        let scene = SCNScene(named: "art.scnassets/Scenes/NutritionFactsScene.scn")!
         
         // Set the scene to the view
         sceneView.scene = scene
