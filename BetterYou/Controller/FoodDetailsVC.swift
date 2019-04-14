@@ -12,6 +12,8 @@ import AVFoundation
 
 class FoodDetailsVC: UIViewController {
 
+    var food: UsdaFood!
+    var sItems: [UsdaSearchResponse]!
     var audioPlayer: AVAudioPlayer!
     var speechToText: SpeechToText!
     var isStreaming = false
@@ -63,6 +65,15 @@ class FoodDetailsVC: UIViewController {
         
         tts(text: text, textToSpeech: textToSpeech)
 
+        
+        let usdaRc = UsdaRestClient()
+        usdaRc.getReport(foodName: "01009", completion: {fd in
+            self.food = fd!
+        })
+        
+        usdaRc.getSearch(keyword: "kale", completion: {items in
+            self.sItems = items!
+        })
         
     }
     
