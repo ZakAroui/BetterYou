@@ -51,7 +51,7 @@ class GoalsViewController: UIViewController {
                     
                     self.usdaRc.getReport(foodName: "09320", completion: {fd in
                         self.food = fd!
-                        self.showTableDetails()
+                        
                         
                     })
                 })
@@ -67,13 +67,21 @@ class GoalsViewController: UIViewController {
             isStreaming = false
             sender.backgroundColor = nil
             speechToText.stopRecognizeMicrophone()
+            self.showTableDetails()
         }
         
     }
     
-    @objc func showTableDetails() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "foodDetailsTVC") as UIViewController
-        navigationController?.pushViewController(vc, animated: true)
+    func showTableDetails() {
+//        let foodDetailsTableVC = FoodDetailsTableVC()
+//        self.navigationController?.pushViewController(foodDetailsTableVC, animated: true)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+        let foodDetailsTableVC = storyBoard.instantiateViewController(withIdentifier: "foodDetailsTVC") as! FoodDetailsTableVC
+        self.present(foodDetailsTableVC, animated: true, completion: nil)
+        
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "foodDetailsTVC") as! UITableViewController
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     static func hexStringToUIColor (hex:String, alpha: Float) -> UIColor {

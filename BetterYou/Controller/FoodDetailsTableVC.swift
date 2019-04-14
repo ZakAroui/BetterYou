@@ -20,12 +20,13 @@ class FoodDetailsTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "background"))
         let usdaRc = UsdaRestClient()
         usdaRc.getReport(foodName: "09320", completion: {fd in
             self.food = fd!
             self.nutrientList = self.food.nutrients
             self.tableView.reloadData()
+            
         })
         
     }
@@ -68,6 +69,10 @@ class FoodDetailsTableVC: UITableViewController {
         cell.unitLbl?.text = nutrient.unit
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
     }
 }
 
