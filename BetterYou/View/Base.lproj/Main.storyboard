@@ -60,6 +60,9 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BETTER YOU LOGO " translatesAutoresizingMaskIntoConstraints="NO" id="mYR-PI-yuv" userLabel="Logo">
                                         <rect key="frame" x="93.666666666666671" y="50.666666666666657" width="187.66666666666663" height="304.66666666666674"/>
+                                        <accessibility key="accessibilityConfiguration" label="Better You App Login Screen">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -80,6 +83,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7r4-lu-avu" userLabel="EmailInput">
                                         <rect key="frame" x="47" y="38.333333333333314" width="281" height="38.333333333333343"/>
+                                        <accessibility key="accessibilityConfiguration" label="enter email here"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -92,18 +96,21 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="baz-uU-94Z" userLabel="PasswordInput">
                                         <rect key="frame" x="47" y="102.33333333333337" width="281" height="38.333333333333343"/>
+                                        <accessibility key="accessibilityConfiguration" label="enter login password here"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-WT-hvd" userLabel="Forgotpassword">
                                         <rect key="frame" x="118" y="250.66666666666663" width="139" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" label="Reset your password button"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.39215686274509803" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G05-xa-db0" userLabel="CreateAccount">
                                         <rect key="frame" x="128.33333333333334" y="308.66666666666663" width="118.66666666666666" height="20.333333333333314"/>
+                                        <accessibility key="accessibilityConfiguration" label="Create an account button"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -116,6 +123,7 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTV-IY-2pJ" userLabel="Login">
                                         <rect key="frame" x="47" y="194.66666666666663" width="281" height="56"/>
+                                        <accessibility key="accessibilityConfiguration" label="login button"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="MIQ-Tn-aB5"/>
                                         </constraints>
@@ -199,30 +207,35 @@
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cg1-ct-zst">
                                 <rect key="frame" x="75" y="262.66666666666669" width="225" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="setup your name here"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIt-w9-KRZ">
                                 <rect key="frame" x="75" y="348.33333333333331" width="225" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="setup your email here"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f64-GF-pPM">
                                 <rect key="frame" x="75" y="431.66666666666669" width="225" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="setup your password here "/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsO-ka-CFU">
                                 <rect key="frame" x="75" y="512.66666666666663" width="225" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="confirm your password here"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-FS-bcS">
                                 <rect key="frame" x="75" y="669.66666666666663" width="225" height="90"/>
+                                <accessibility key="accessibilityConfiguration" label="continue to the goals screen button"/>
                                 <state key="normal" title="Continue" backgroundImage="Button"/>
                                 <connections>
                                     <segue destination="rpu-yq-BHV" kind="show" id="de0-e7-p9E"/>
@@ -230,6 +243,9 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_circle" translatesAutoresizingMaskIntoConstraints="NO" id="sC3-HK-vew">
                                 <rect key="frame" x="125" y="89" width="125" height="125"/>
+                                <accessibility key="accessibilityConfiguration" label="your profile picture">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="Bea-i0-Ykm"/>
                                     <constraint firstAttribute="width" constant="125" id="wkH-hN-5T2"/>
@@ -355,6 +371,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmb-uw-k8N">
                                 <rect key="frame" x="75" y="72" width="225" height="54"/>
+                                <accessibility key="accessibilityConfiguration" label="import from Apple Health Button"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="WEK-wd-rB9"/>
                                     <constraint firstAttribute="width" constant="225" id="vgW-HE-1uP"/>
@@ -388,6 +405,9 @@
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="List your allergies here">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="NPB-R9-HOa"/>
                                             <constraint firstAttribute="width" constant="225" id="Tcc-sy-nrN"/>
@@ -408,6 +428,9 @@
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" label="List your dietary restrictions here">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -440,6 +463,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m57-qe-Dx1">
                                                 <rect key="frame" x="169" y="0.0" width="51" height="31"/>
+                                                <accessibility key="accessibilityConfiguration" label="Loose weight goal switch"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -454,6 +478,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GVa-2a-zhj">
                                                 <rect key="frame" x="169" y="0.0" width="51" height="31"/>
+                                                <accessibility key="accessibilityConfiguration" label="gain weight goal switch"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -468,6 +493,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJp-g6-laz">
                                                 <rect key="frame" x="169" y="0.0" width="51" height="31"/>
+                                                <accessibility key="accessibilityConfiguration" label="less sugar goal switch"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -482,6 +508,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSM-Nc-9qX">
                                 <rect key="frame" x="75" y="569.66666666666663" width="225" height="56"/>
+                                <accessibility key="accessibilityConfiguration" label="continue to the main screen button"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="XtB-B2-5we"/>
                                     <constraint firstAttribute="height" constant="56" id="x7i-yp-blL"/>
@@ -546,6 +573,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Achieved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTR-6Y-bpS">
                                 <rect key="frame" x="125.66666666666666" y="141" width="123.66666666666666" height="22.333333333333343"/>
+                                <accessibility key="accessibilityConfiguration" label="Achieved goals screen"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="19"/>
                                 <color key="textColor" red="0.39215686274509803" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -563,10 +591,14 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Diary" translatesAutoresizingMaskIntoConstraints="NO" id="ni1-xz-Qgu" userLabel="Diary Icon">
                                         <rect key="frame" x="8" y="8" width="45" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="go to log screen tab button">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Badge" translatesAutoresizingMaskIntoConstraints="NO" id="sxF-dv-ULg">
                                         <rect key="frame" x="71" y="8" width="45" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="go to rewards screen tab button"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nutrition" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-Yi-lsm" userLabel="Nutrition">
                                         <rect key="frame" x="250" y="8" width="45" height="50"/>
@@ -575,6 +607,9 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="RFJ-ht-dFT" userLabel="Account">
                                         <rect key="frame" x="322" y="8" width="45" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="go to your profile screen tab button">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cf-0s-1fB">
                                         <rect key="frame" x="148" y="0.0" width="78" height="81"/>
@@ -590,6 +625,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7g9-q9-4Uj">
                                         <rect key="frame" x="148" y="0.0" width="78" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="scan a food tab button"/>
                                         <connections>
                                             <segue destination="jaT-NW-a5Q" kind="show" id="Gcj-3U-ygc"/>
                                         </connections>
@@ -599,6 +635,7 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Food Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcJ-Io-enC">
                                 <rect key="frame" x="98" y="412" width="179" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="your daily food diary"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fdg-HC-dPW"/>
                                     <constraint firstAttribute="width" constant="179" id="JCL-D1-pVR"/>
@@ -622,6 +659,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning, Lisa!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z45-Rg-YJG">
                                 <rect key="frame" x="16" y="44" width="359" height="82"/>
+                                <accessibility key="accessibilityConfiguration" label="Good morning Lisa!"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="359" id="jke-61-KTO"/>
                                     <constraint firstAttribute="height" constant="82" id="qCT-Wy-6sE"/>
@@ -632,6 +670,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpr-LF-S9i">
                                 <rect key="frame" x="328" y="364.66666666666669" width="42" height="15"/>
+                                <accessibility key="accessibilityConfiguration" label="daily progress is 80 percent"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="Dlz-v3-9Na"/>
                                     <constraint firstAttribute="height" constant="15" id="JbL-mF-lZl"/>
@@ -649,7 +688,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42K-tJ-BMA" userLabel="recBtn">
                                 <rect key="frame" x="301" y="675" width="58" height="43"/>
-                                <accessibility key="accessibilityConfiguration" label="Search for Food Nutrients"/>
+                                <accessibility key="accessibilityConfiguration" label="Search for Food Nutrients using voice"/>
                                 <connections>
                                     <action selector="Mic:" destination="HQm-ko-1hx" eventType="touchUpInside" id="RRo-bA-s6F"/>
                                 </connections>
@@ -759,6 +798,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FnP-Dq-XsC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <accessibility key="accessibilityConfiguration" label="take or pick a picture screen">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBZ-eU-k8U">
                                 <rect key="frame" x="0.0" y="763" width="375" height="49"/>
@@ -772,9 +814,9 @@
                                 </items>
                             </toolbar>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6H-bs-g1s">
-                                <rect key="frame" x="0.0" y="718" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="718.33333333333337" width="375" height="44.666666666666629"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="srP-eY-60c">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44.666666666666629"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-AU-Qwr">
