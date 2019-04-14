@@ -13,6 +13,11 @@
 		0DC1213C22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1213A22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld */; };
 		0DC1214122629EFE00592BD5 /* watson_plants.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1214022629EFE00592BD5 /* watson_plants.mlmodel */; };
 		0DC1214322629F0E00592BD5 /* watson_tools.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1214222629F0E00592BD5 /* watson_tools.mlmodel */; };
+		0DC121472262C4A500592BD5 /* UsdaRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC121462262C4A500592BD5 /* UsdaRestClient.swift */; };
+		0DC121492262C59500592BD5 /* UsdaFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC121482262C59500592BD5 /* UsdaFood.swift */; };
+		0DC1214B2262C5AB00592BD5 /* UsdaSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1214A2262C5AB00592BD5 /* UsdaSearchResponse.swift */; };
+		0DC1214D2262C65800592BD5 /* UsdaFoodDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC1214C2262C65800592BD5 /* UsdaFoodDesc.swift */; };
+		0DC121512262CD7200592BD5 /* UsdaFoodNutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC121502262CD7200592BD5 /* UsdaFoodNutrient.swift */; };
 		3DE6C49458410387EC577DA3 /* Pods_BetterYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F879696026DE40F81B07CE94 /* Pods_BetterYou.framework */; };
 		837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837BE0962261C96600EB8EBB /* NutritionData.swift */; };
 		83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F4982261AE5900572A1B /* AppDelegate.swift */; };
@@ -30,6 +35,11 @@
 		0DC1213B22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Ml_Vision_Simple.xcdatamodel; sourceTree = "<group>"; };
 		0DC1214022629EFE00592BD5 /* watson_plants.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = watson_plants.mlmodel; sourceTree = "<group>"; };
 		0DC1214222629F0E00592BD5 /* watson_tools.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = watson_tools.mlmodel; sourceTree = "<group>"; };
+		0DC121462262C4A500592BD5 /* UsdaRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsdaRestClient.swift; sourceTree = "<group>"; };
+		0DC121482262C59500592BD5 /* UsdaFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsdaFood.swift; path = BetterYou/service/UsdaFood.swift; sourceTree = SOURCE_ROOT; };
+		0DC1214A2262C5AB00592BD5 /* UsdaSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsdaSearchResponse.swift; path = BetterYou/service/UsdaSearchResponse.swift; sourceTree = SOURCE_ROOT; };
+		0DC1214C2262C65800592BD5 /* UsdaFoodDesc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsdaFoodDesc.swift; sourceTree = "<group>"; };
+		0DC121502262CD7200592BD5 /* UsdaFoodNutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsdaFoodNutrient.swift; sourceTree = "<group>"; };
 		62D0477DB3E4095441C5909B /* Pods-BetterYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.debug.xcconfig"; sourceTree = "<group>"; };
 		67C921C657267CFA36DE10DA /* Pods-BetterYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterYou/Pods-BetterYou.release.xcconfig"; sourceTree = "<group>"; };
 		837BE0962261C96600EB8EBB /* NutritionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionData.swift; sourceTree = "<group>"; };
@@ -56,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC121452262C47800592BD5 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				0DC121462262C4A500592BD5 /* UsdaRestClient.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		3D5B0A67E3339AEEBE25E36C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +86,10 @@
 		837BE0942261C8AC00EB8EBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0DC121482262C59500592BD5 /* UsdaFood.swift */,
+				0DC1214C2262C65800592BD5 /* UsdaFoodDesc.swift */,
+				0DC121502262CD7200592BD5 /* UsdaFoodNutrient.swift */,
+				0DC1214A2262C5AB00592BD5 /* UsdaSearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +136,7 @@
 				837BE0952261C91600EB8EBB /* Web */,
 				837BE0942261C8AC00EB8EBB /* Model */,
 				83A2F4982261AE5900572A1B /* AppDelegate.swift */,
+				0DC121452262C47800592BD5 /* service */,
 				83A2F49A2261AE5900572A1B /* art.scnassets */,
 				83A2F4AD2261AE7D00572A1B /* Controller */,
 				83A2F4AC2261AE6C00572A1B /* View */,
@@ -300,13 +323,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC1213722629A2600592BD5 /* ImageClassificationVC.swift in Sources */,
+				0DC1214B2262C5AB00592BD5 /* UsdaSearchResponse.swift in Sources */,
 				83A2F49D2261AE5900572A1B /* ViewController.swift in Sources */,
 				0DC1214122629EFE00592BD5 /* watson_plants.mlmodel in Sources */,
+				0DC121472262C4A500592BD5 /* UsdaRestClient.swift in Sources */,
 				0DC1213C22629DD300592BD5 /* Core_Ml_Vision_Simple.xcdatamodeld in Sources */,
+				0DC1214D2262C65800592BD5 /* UsdaFoodDesc.swift in Sources */,
 				0D51C6EA22625F020051EB08 /* FoodDetailsVC.swift in Sources */,
 				83A2F4992261AE5900572A1B /* AppDelegate.swift in Sources */,
+				0DC121492262C59500592BD5 /* UsdaFood.swift in Sources */,
 				0DC1214322629F0E00592BD5 /* watson_tools.mlmodel in Sources */,
 				0DC1213922629A7600592BD5 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				0DC121512262CD7200592BD5 /* UsdaFoodNutrient.swift in Sources */,
 				837BE0972261C96600EB8EBB /* NutritionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

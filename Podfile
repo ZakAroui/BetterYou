@@ -8,19 +8,19 @@ target 'BetterYou' do
   use_frameworks!
 
   # Pods for BetterYou
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.7'
 
-    pod 'IBMWatsonAssistantV1', '~> 2.0.1'
-    pod 'IBMWatsonAssistantV2', '~> 2.0.1'
-    pod 'IBMWatsonCompareComplyV1', '~> 2.0.1'
-    pod 'IBMWatsonDiscoveryV1', '~> 2.0.1'
-    pod 'IBMWatsonLanguageTranslatorV3', '~> 2.0.1'
-    pod 'IBMWatsonNaturalLanguageClassifierV1', '~> 2.0.1'
-    pod 'IBMWatsonNaturalLanguageUnderstandingV1', '~> 2.0.1'
-    pod 'IBMWatsonPersonalityInsightsV3', '~> 2.0.1'
-    pod 'IBMWatsonSpeechToTextV1', '~> 2.0.1'
-    pod 'IBMWatsonTextToSpeechV1', '~> 2.0.1'
-    pod 'IBMWatsonToneAnalyzerV3', '~> 2.0.1'
-    pod 'IBMWatsonVisualRecognitionV3', '~> 2.0.1'
+  pod 'IBMWatsonAssistantV1', '~> 2.0.1'
+  pod 'IBMWatsonAssistantV2', '~> 2.0.1'
+  pod 'IBMWatsonCompareComplyV1', '~> 2.0.1'
+  pod 'IBMWatsonDiscoveryV1', '~> 2.0.1'
+  pod 'IBMWatsonLanguageTranslatorV3', '~> 2.0.1'
+  pod 'IBMWatsonNaturalLanguageClassifierV1', '~> 2.0.1'
+  pod 'IBMWatsonNaturalLanguageUnderstandingV1', '~> 2.0.1'
+  pod 'IBMWatsonPersonalityInsightsV3', '~> 2.0.1'
+  pod 'IBMWatsonSpeechToTextV1', '~> 2.0.1'
+  pod 'IBMWatsonTextToSpeechV1', '~> 2.0.1'
+  pod 'IBMWatsonToneAnalyzerV3', '~> 2.0.1'
+  pod 'IBMWatsonVisualRecognitionV3', '~> 2.0.1'
    
 end
