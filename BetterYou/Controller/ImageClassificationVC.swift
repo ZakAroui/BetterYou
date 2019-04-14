@@ -22,6 +22,7 @@ class ImageClassificationVC: UIViewController {
     var audioPlayer: AVAudioPlayer!
     var visualRecognition: VisualRecognition!
     let textToSpeech = TextToSpeech(apiKey: "saoXu9eZr6zGva_DyV4umFLOfMS441_aPVwnoRK8NNiX")
+    var food: UsdaFood!
 
     
     
@@ -47,6 +48,10 @@ class ImageClassificationVC: UIViewController {
             
             if !classes.isEmpty {
                 self.tts(text: classes[0].className, textToSpeech: self.textToSpeech)
+                let usdaRc = UsdaRestClient()
+                usdaRc.getReport(foodName: "09320", completion: {fd in
+                    self.food = fd!
+                })
             }
             
             var clsses = ""

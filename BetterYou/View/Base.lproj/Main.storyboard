@@ -758,9 +758,9 @@
                                 </items>
                             </toolbar>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6H-bs-g1s">
-                                <rect key="frame" x="0.0" y="718.66666666666663" width="375" height="44.333333333333371"/>
+                                <rect key="frame" x="0.0" y="718" width="375" height="45"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="srP-eY-60c">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44.333333333333371"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Add a photo." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-AU-Qwr">
@@ -827,7 +827,7 @@
                                 <rect key="frame" x="0.0" y="94" width="375" height="718"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="tqQ-Dg-4Sq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="tqQ-Dg-4Sq" customClass="CustomTableViewCell" customModule="BetterYou" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tqQ-Dg-4Sq" id="rj9-qo-p4B">
@@ -897,6 +897,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="hfs-f2-hed" secondAttribute="trailing" constant="15.33" id="QhW-Mu-dux"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="NutrientData" destination="1Fd-2h-mzn" id="7Ao-4x-H2M"/>
+                                            <outlet property="UnitData" destination="Wct-XD-Gk2" id="5fm-8Y-MOM"/>
+                                            <outlet property="ValuePer100g" destination="T6m-5k-qyZ" id="mgK-Xp-fEk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
